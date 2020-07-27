@@ -65,6 +65,7 @@ class _HomePageState extends State<HomePage> {
     var size = MediaQuery.of(context).size;
     final user = Provider.of<User>(context, listen: false);
     final mod = Provider.of<FirebaseModuleService>(context).getRepo();
+
     Widget quizList() {
       return StreamBuilder<QuerySnapshot> (
           stream: Firestore.instance.collection("Reminders")
@@ -74,6 +75,7 @@ class _HomePageState extends State<HomePage> {
             if (!snapshot.hasData) return LinearProgressIndicator();
             List<Widget> colItems = snapshot.data.documents.map((e){
               var timeDisplayed = DateFormat('dd-MM-yyyy  kk:mm').format(e.data['date'].toDate());
+              String name = e.data['quizName'];
               return Container(
                   padding: EdgeInsets.only(top: 0, bottom: 0, left: 8),
                   margin: EdgeInsets.all(8),
@@ -94,10 +96,10 @@ class _HomePageState extends State<HomePage> {
                     child: Row(
                         children: [
                           RichText(
-                            textAlign: TextAlign.center,
+                            textAlign: TextAlign.left,
                             text: TextSpan(
                               style: TextStyle(color: Colors.black, fontSize: kMediumText, fontWeight: FontWeight.bold),
-                              text: " ${timeDisplayed}",
+                              text: "${name}\n${timeDisplayed}",
                             ),
                           ),
                           Spacer(),
@@ -132,6 +134,7 @@ class _HomePageState extends State<HomePage> {
             if (!snapshot.hasData) return LinearProgressIndicator();
             List<Widget> colItems = snapshot.data.documents.map((e){
               var timeDisplayed = DateFormat('dd-MM-yyyy  kk:mm').format(e.data['date'].toDate());
+              String name = e.data['taskName'];
               return Container(
                   padding: EdgeInsets.only(top: 0, bottom: 0, left: 8),
                   margin: EdgeInsets.all(8),
@@ -152,10 +155,10 @@ class _HomePageState extends State<HomePage> {
                     child: Row(
                         children: [
                           RichText(
-                            textAlign: TextAlign.center,
+                            textAlign: TextAlign.left,
                             text: TextSpan(
                               style: TextStyle(color: Colors.black, fontSize: kMediumText, fontWeight: FontWeight.bold),
-                              text: " ${timeDisplayed}",
+                              text: "${name}\n${timeDisplayed}",
                             ),
                           ),
                           Spacer(),
@@ -327,8 +330,6 @@ class _HomePageState extends State<HomePage> {
                                           );
                                         }
                                       );
-
-
                                     },
                                     child: Padding(
                                       padding: const EdgeInsets.only(right: 24),
@@ -343,7 +344,6 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   )
                                 ]
-
                               ),
                               AtAGlance(screenHeight: size.height, screenWidth: size.width),
                               SizedBox(height: size.height * .02),

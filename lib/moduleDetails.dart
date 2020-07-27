@@ -125,8 +125,8 @@ class _ModuleDetailsState extends State<ModuleDetails> {
   }
 
   Widget workloadInfo(List<num> loads, var size) {
-    int totalWorkload = 0;
-    for(int load in loads){
+    num totalWorkload = 0;
+    for(num load in loads){
       totalWorkload += load;
     }
     return Container(
