@@ -32,7 +32,7 @@ class _QuizFormState extends State<QuizForm> {
   DateTime reminderDate;
   bool checked = false;
   FormType type = FormType.openEnded;
-  int _radioValue1;
+  int _radioValue1 = 0;
   FocusNode f1;
   FocusNode f2;
   FocusNode f3;
@@ -259,7 +259,7 @@ class _QuizFormState extends State<QuizForm> {
                         MCQ: checked,
                         options: List(4),
                       );
-                      _radioValue1 = null;
+                      _radioValue1 = 0;
                       controller1.clear();
                       controller2.clear();
                       controller3.clear();

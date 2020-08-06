@@ -6,6 +6,7 @@ import 'package:HyperBeam/quizHandler.dart';
 import 'package:HyperBeam/services/firebase_module_service.dart';
 import 'package:HyperBeam/services/firebase_task_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:HyperBeam/widgets/designConstants.dart';
 import 'package:flutter/material.dart';
@@ -356,21 +357,24 @@ class _ProgressAdditionCardState extends State<ProgressAdditionCard> {
               bottom: 0,
               left: 0,
               right: 0,
-              child: Container(
-                child: Center(
-                  child: Icon(Icons.add),
-                ),
-                height: 288,
-                decoration: BoxDecoration(
-                  color: Color(0xFFFFFFFF),
-                  borderRadius: BorderRadius.circular(24),
-                  boxShadow: [
-                    BoxShadow(
-                      offset: Offset(0, 8),
-                      blurRadius: 8,
-                      color: kShadowColor,
-                    ),
-                  ],
+              child: Opacity(
+                opacity: 0.4,
+                child: Container(
+                  child: Center(
+                    child: Icon(Icons.add),
+                  ),
+                  height: 288,
+                  decoration: BoxDecoration(
+                    color: Color(0xFFFFFFFF),
+                    borderRadius: BorderRadius.circular(24),
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(0, 8),
+                        blurRadius: 8,
+                        color: kShadowColor,
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

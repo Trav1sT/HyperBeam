@@ -428,27 +428,27 @@ class _ModuleDetailsState extends State<ModuleDetails> {
                                         ),
                                         SizedBox(height: 8,),
                                         Container(
-                                          height: size.height*0.18,
+                                            height: size.height*0.22,
                                             padding: new EdgeInsets.only(right: 8.0, left: 8),
                                             child: Row(
                                               children: <Widget>[
                                                 Container(
                                                   padding: EdgeInsets.all(16),
+                                                  height: size.height*0.22,
                                                   decoration: BoxDecoration(
                                                     color: kSecondaryColor,
                                                     borderRadius: BorderRadius.all(Radius.circular(8)),
                                                   ),
-                                                  height: size.height*0.18,
                                                   width: size.width*0.5-8,
-                                                  child: SingleChildScrollView(child: workloadInfo(args.workload, size)),
+                                                  child: workloadInfo(args.workload, size),
                                                 ),
                                                 Container(
                                                   padding: EdgeInsets.all(16),
+                                                  height: size.height*0.22,
                                                   decoration: BoxDecoration(
                                                     color: kPrimaryColor,
                                                     borderRadius: BorderRadius.all(Radius.circular(8)),
                                                   ),
-                                                  height: size.height*0.18,
                                                   width: size.width*0.5-8,
                                                   child: SingleChildScrollView(child: examInfo(args.semesterData, size)),
                                                 )
@@ -456,7 +456,7 @@ class _ModuleDetailsState extends State<ModuleDetails> {
                                             ),
                                         ),
                                         Container(
-                                          height: size.height*0.12,
+                                          height: size.height*0.16,
                                           padding: new EdgeInsets.only(right: 8.0, left: 8),
                                           child: Row(
                                             children: <Widget>[
@@ -466,7 +466,7 @@ class _ModuleDetailsState extends State<ModuleDetails> {
                                                     color: kPrimaryColor,
                                                     borderRadius: BorderRadius.all(Radius.circular(8)),
                                                   ),
-                                                  height: size.height*0.12,
+                                                  height: size.height*0.16,
                                                 width: size.width*0.5-8,
                                                 child: SingleChildScrollView(child: preclusionInfo(args.preclusion, size))
                                               ),
@@ -476,7 +476,7 @@ class _ModuleDetailsState extends State<ModuleDetails> {
                                                   color: kSecondaryColor,
                                                   borderRadius: BorderRadius.all(Radius.circular(8)),
                                                 ),
-                                                height: size.height*0.12,
+                                                height: size.height*0.16,
                                                 width: size.width*0.5-8,
                                                 child: SingleChildScrollView(child: suInfo(args.attributes, size)),
                                               )
