@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>687813947855-16kcd28ai5u133rom2gihka67rslq163.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.687813947855-16kcd28ai5u133rom2gihka67rslq163</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>687813947855-urol7p9m3vv2l8efvg5adjk6ukprmplo.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyApJWOTOFP4Ihv1lfH5L062FOHIn8LZEqo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>687813947855</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.orbital.hyperbeam</string>
+	<key>PROJECT_ID</key>
+	<string>hyperbeam2-c67c0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hyperbeam2-c67c0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:687813947855:ios:82f7f0c6c9f4dc85bbe2ba</string>
+	<key>DATABASE_URL</key>
+	<string>https://hyperbeam2-c67c0.firebaseio.com</string>
+</dict>
+</plist>
