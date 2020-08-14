@@ -3,7 +3,7 @@
 An NUS Orbital 2020 independent software development  project.
 
 ## Introduction
-
+We aim to bridge the knowledge gap between the stronger and weaker students. The weaker students can learn from the stronger students by perusing the kind of questions set by them and which part of the note they have referenced too. The stronger students can learn from their peers as they do quizzes set by other students which may have referenced a different part of the note.
 ## Features
 1. Login Page\
   1.1 Create account with email verification\
